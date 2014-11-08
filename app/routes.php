@@ -15,3 +15,6 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+
+Route::get('/{name}', array('as' => 'startPageRoute', 'uses' => 'IndexController@StartPage'));
