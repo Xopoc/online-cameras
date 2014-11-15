@@ -32,6 +32,6 @@ class IndexController extends BaseController {
                 'people'=>$people
             ));
         }
-        throw new NotFoundHttpExceptio;
+        App::abort(404);
 	}
 }

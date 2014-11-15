@@ -17,4 +17,4 @@ Route::get('/', function()
 });
 
 
-Route::get('/{name}', array('as' => 'startPageRoute', 'uses' => 'IndexController@StartPage'));
+Route::get('/index/{name}', array('as' => 'startPageRoute', 'uses' => 'IndexController@StartPage'));

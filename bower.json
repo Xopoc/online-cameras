@@ -1,0 +1,7 @@
+{
+    "name": "online kameras",
+    "dependencies": {
+        "bootstrap": "~3.3",
+        "jquery": "~2.1"
+    }
+}
