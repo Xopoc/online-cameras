@@ -1,0 +1,66 @@
+body {
+  /*background-color: #f0f;*/
+}
+
+
+.example {
+  position: relative;
+}
+.example input[type=checkbox] {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+.example input[type=checkbox] ~ label {
+
+}
+.example input[type=checkbox] ~ label .glyphicon-stop {
+  display: none;
+}
+.example input[type=checkbox]:checked ~ label .glyphicon-stop {
+  display: inline-block;
+}
+.example input[type=checkbox]:checked ~ label .glyphicon-play {
+  display: none;
+}
+
+
+/* example 2 */
+.example2 {
+  position: relative;
+}
+.example2 input[type=checkbox] {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+.example2 input[type=checkbox] ~ label {
+  position: relative;
+}
+.example2 input[type=checkbox] ~ label::before {
+  display: block;
+  content: attr(data-on);
+}
+.example2 input[type=checkbox] ~ label::after {
+  display: block;
+  content: attr(data-off);
+}
+
+.example2 input[type=checkbox] ~ label::before {
+  display: none;
+}
+.example2 input[type=checkbox]:checked ~ label::before {
+  display: inline-block;
+}
+.example2 input[type=checkbox]:checked ~ label::after {
+  display: none;
+}
+
+/* Carousel */
+.my-carousel {
+  position: relative;
+  overflow-x: auto;
+}
+.my-carousel-inner {
+  white-space: nowrap;
+}

@@ -34,4 +34,9 @@ class IndexController extends BaseController {
         }
         App::abort(404);
 	}
+
+    public function lessPage()
+    {
+            return View::make('index.less');
+    }
 }

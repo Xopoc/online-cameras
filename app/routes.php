@@ -18,3 +18,4 @@ Route::get('/', function()
 
 
 Route::get('/index/{name}', array('as' => 'startPageRoute', 'uses' => 'IndexController@StartPage'));
+Route::get('/less-test', array('as' => 'lessRoute', 'uses' => 'IndexController@LessPage'));

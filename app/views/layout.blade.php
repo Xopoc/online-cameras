@@ -2,8 +2,16 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="{{ asset('assets/bootstrap/dist/css/bootstrap.min.css') }}"/>
-        <link rel="stylesheet" href="{{ asset('css/site.css') }}"/>
+
+         <script>
+            less = {
+                env: "development"
+            };
+        </script>
+        <link rel="stylesheet/less" type="text/css"  href="{{ asset('less/init.less') }}"/>
+        <script src="{{ asset('assets/less/dist/less.min.js') }}"></script>
+
+
     </head>
     <body>
 
